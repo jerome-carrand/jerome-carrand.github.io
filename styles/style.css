@@ -1,11 +1,11 @@
 html {
-  background-color: #C0C0C0;
+  background-color: #F7F7F7;
 }
 
 body {
   width: 1000px;
   margin: 0 auto 0 auto;
-  background-color: #F7F7F7;
+  background-color: #C0C0C0;
   padding: 0 20px 0 20px;
   /*rder: 5px solid black;*/
 }
@@ -23,7 +23,7 @@ body {
     margin: 8px;
     padding: 5px;
     font-size: 20px;
-    background: white;
+    background: #F0F0F0;
 }
 
 .case > h2,
@@ -39,7 +39,7 @@ body {
 	width : 650px;
 	margin-left: 20px;
 	padding: 20px;
-	background-color: #F0F0F0;
+	background-color: #FAFAFA;
 	/*border: 5px solid black;*/
 }
 
@@ -49,7 +49,7 @@ body {
 	width : auto;
 	height: 100%;
 	margin: 20px;
-	background-color: #F0F0F0;
+	background-color: #FAFAFA;
 	/*border: 5px solid black;*/
 }
 
