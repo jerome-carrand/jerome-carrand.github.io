@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  width: 600px;
+  width: 900px;
   margin: 0 auto;
   background-color: #F7F7F7;
   padding: 0 20px 20px 20px;
@@ -19,15 +19,28 @@ nav
 	width: 800px;
 }
 
-nav a
+#menu
 {
-    font-size: 1.3em;
+	display : inline-block;
+	width: 200px;
+	background-color : #F5F5F5;
+	font-size: 1.1em;
+	border-radius: 10px;
+	margin-top:20px;
+}
+
+#menu ul
+{
+    list-style-type: none;
+}
+
+#menu a
+{
     color: #202020;
-    padding-bottom: 3px;
     text-decoration: none;
 }
 
-nav a:hover
+#menu a:hover
 {
     color: rgb(154,123,99);
     border-bottom: 3px solid rgb(154,123,99);
