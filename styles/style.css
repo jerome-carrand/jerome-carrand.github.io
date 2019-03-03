@@ -19,34 +19,8 @@ nav
 	width: 800px;
 }
 
-#menu
-{
-	display : inline-block;
-	width: 200px;
-	background-color : #F5F5F5;
-	font-size: 1.1em;
-	border-radius: 10px;
-	margin-top:20px;
-}
 
-#menu ul
-{
-    list-style-type: none;
-}
-
-#menu a
-{
-    color: #202020;
-    text-decoration: none;
-}
-
-#menu a:hover
-{
-    color: rgb(154,123,99);
-    border-bottom: 3px solid rgb(154,123,99);
-}
-
-.forecast {
+.menu {
     display : inline-block;
     margin: 0;
     padding: .3rem;
@@ -54,20 +28,20 @@ nav
     font: 1rem 'Fira Sans', sans-serif;
 }
 
-.forecast > h1,
+.menu > h1,
 .day-forecast {
     margin: .5rem;
     padding: .3rem;
     font-size: 1.2rem;
 }
 
-.day-forecast {
+.case {
     background: right/contain content-box border-box no-repeat
         url('/media/examples/rain.svg') white;
 }
 
-.day-forecast > h2,
-.day-forecast > p {
+.case > h2,
+.case > p {
     margin: .2rem;
     font-size: 1rem;
 }
