@@ -32,7 +32,7 @@ nav
 .case {
     margin: 8px;
     padding: 5px;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .case {
@@ -42,7 +42,7 @@ nav
 .case > h2,
 .case > p {
     margin: 3px;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 #corps {
