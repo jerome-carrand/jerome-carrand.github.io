@@ -69,7 +69,7 @@ body {
 
 #menu ul
 {
-    list-style-type: '-';
+    list-style-type: none;
 }
 
 #menu li
