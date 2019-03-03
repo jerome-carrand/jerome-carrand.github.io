@@ -72,11 +72,6 @@ body {
     list-style-type: none;
 }
 
-#menu li
-{
-    display: inline-block;
-    margin-right: 15px;
-}
 
 #rouge
 {
