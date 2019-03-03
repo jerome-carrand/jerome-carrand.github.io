@@ -23,16 +23,16 @@ nav
 .menu {
     display : inline-block;
     margin: 0;
-    padding: .3rem;
+    padding: 4px;
     background-color: #eee;
-    font: 1rem 'Fira Sans', sans-serif;
+    font: 14px;
 }
 
 .menu > h1,
 .case {
-    margin: .5rem;
-    padding: .3rem;
-    font-size: 1.2rem;
+    margin: 8px;
+    padding: 5px;
+    font-size: 14px;
 }
 
 .case {
@@ -42,11 +42,11 @@ nav
 
 .case > h2,
 .case > p {
-    margin: .2rem;
-    font-size: 1rem;
+    margin: 3px;
+    font-size: 14px;
 }
 
-.corps {
+#corps {
 	display : inline-block;
 	vertical-align : top;
 	width : 650px;
