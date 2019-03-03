@@ -53,11 +53,12 @@ body {
 	height: 100%;
 	margin: 20px;
 	border: 5px solid black;
+	padding-radius: 10px;
 }
 
 #menu a
 {
-    font-size: 1.3em;
+    font-size: 18px;
     color: #202020;
     padding-bottom: 3px;
     text-decoration: none;
@@ -65,7 +66,12 @@ body {
 
 #menu a:hover
 {
-    color: rgb(154,123,99);
-    border-bottom: 3px solid rgb(154,123,99);
+    color: #087EA2;
+    border-bottom: 3px solid #087EA2;
 }
-	
+
+.rouge
+{
+	color : #087EA2 !important;
+	border-bottom: 3px solid #087EA2;
+}
