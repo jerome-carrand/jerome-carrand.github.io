@@ -1,5 +1,5 @@
 html {
-  background-color: #F2F2F2;
+  background-color: #C0C0C0;
 }
 
 body {
@@ -7,7 +7,7 @@ body {
   margin: 0 auto 0 auto;
   background-color: #F7F7F7;
   padding: 0 20px 20px 20px;
-  border: 5px solid black;
+  /*rder: 5px solid black;*/
 }
 
 
@@ -15,7 +15,7 @@ body {
     display : inline-block;
     margin: 0 auto;
     padding: 4px;
-    background-color: #eee;
+    /*background-color: #eee;*/
     font: 20px;
 }
 
@@ -39,7 +39,8 @@ body {
 	width : 650px;
 	margin-left: 20px;
 	padding: 20px;
-	border: 5px solid black;
+	background-color: #E7E7E7;
+	/*border: 5px solid black;*/
 }
 
 #menu {
@@ -48,8 +49,8 @@ body {
 	width : auto;
 	height: 100%;
 	margin: 20px;
-	border: 5px solid black;
-	padding-radius: 10px;
+	background-color: #E7E7E7;
+	/*border: 5px solid black;*/
 }
 
 #menu a
