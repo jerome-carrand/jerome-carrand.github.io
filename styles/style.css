@@ -71,3 +71,7 @@ nav
     margin: .2rem;
     font-size: 1rem;
 }
+
+.corps {
+    display : inline-block;
+}
