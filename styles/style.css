@@ -60,3 +60,13 @@ aside {
     float: left;
     background-color: #FF9900;
 }
+
+#menu {
+	display : inline-block;
+	vertical-align : top;
+	border-radius: 10px;
+	width : auto;
+	height: 100%
+	margin: 20px;
+}
+	
