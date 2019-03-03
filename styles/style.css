@@ -36,6 +36,19 @@ body {
     font-size: 20px;
 }
 
+.case > a
+{
+	color: black;
+	text-decoration: none;
+}
+
+.case > a:hover
+{
+    color: rgb(154,123,99);
+}
+
+
+
 #corps {
 	display : inline-block;
 	vertical-align : top;
