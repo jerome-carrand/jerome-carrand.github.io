@@ -130,3 +130,38 @@ h6 {
 }
 
 /* Styles - fin */
+
+/* ______________________________________ */
+
+/* Navigation - debut */
+.accueil > active_accueil {
+	color : #087EA2 !important;
+	border-bottom: 3px solid #087EA2;
+}
+
+.ARPE > active_ARPE {
+	color : #087EA2 !important;
+	border-bottom: 3px solid #087EA2;
+}
+
+.M2 > active_M2 {
+	color : #087EA2 !important;
+	border-bottom: 3px solid #087EA2;
+}
+
+.M1 > active_M1 {
+	color : #087EA2 !important;
+	border-bottom: 3px solid #087EA2;
+}
+
+.L3 > active_L3 {
+	color : #087EA2 !important;
+	border-bottom: 3px solid #087EA2;
+}
+
+.stages > active_stages {
+	color : #087EA2 !important;
+	border-bottom: 3px solid #087EA2;
+}
+
+/* Navigation - fin */
