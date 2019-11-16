@@ -53,6 +53,7 @@ body {
 }
 
 .case > h2,
+.case > h3,
 .case > p {
     margin: 3px;
     font-size: 20px;
