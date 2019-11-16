@@ -1,5 +1,5 @@
 <?php
-  echo "
+  echo '
     <img src="images/logo.png" alt="projection sur la sphère attracteur stage M1">
     <article class="case">
         <h3><a href="index.html" id="rouge"><active_accueil>Accueil</active_accueil></a></h3>
@@ -15,5 +15,5 @@
     </article>
     <article class="case">
         <h3><a href="stages.html" ><active_stages>Stages</active_stages></a></h3>
-    </article> ";
+    </article> ';
 ?>
