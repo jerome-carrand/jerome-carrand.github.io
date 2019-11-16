@@ -134,7 +134,30 @@ h6 {
 /* ______________________________________ */
 
 /* Navigation - debut */
+.accueil,
+.formation,
+.ARPE,
+.M2,
+.M1,
+.L3,
+.stages{
+}
+
+active_accueil,
+active_formation,
+active_ARPE,
+active_M2,
+active_M1,
+active_L3,
+active_stages {
+}
+
 .accueil > active_accueil {
+	color : #087EA2 !important;
+	border-bottom: 3px solid #087EA2;
+}
+
+.formation > active_formation {
 	color : #087EA2 !important;
 	border-bottom: 3px solid #087EA2;
 }
