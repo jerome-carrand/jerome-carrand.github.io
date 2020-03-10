@@ -1,52 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="author" content="Jérôme Carrand">
-    <title>Jérôme Carrand</title>
-    <link rel="shortcut icon" href="../images/logo.png"/>
-    <link href="../styles/style.css" rel="stylesheet" type="text/css">
-
-  </head>
-
-  
-  
-
-<body>
-
-<div id="menu">  
-<article class="menu">
-    <img src="../images/logo.png" alt="projection sur la sphère attracteur stage M1">
-    <article class="case">
-        <h2><a href="../index.html">Accueil</a></h2>
-    </article>
-    <article class="case">
-        <h2><a href="index.html" id="rouge">Formation</a></h2>
-        <ul>
-          <li> <a href="M2.html" >M2</a></li><br>
-          <li> <a href="M1.html" >M1</a></li><br>
-          <li> <a href="L3.html" >L3</a></li>
-        </ul>
-    </article>
-    <article class="case">
-        <h2><a href="../stages.html" >Stages</a></h2>
-    </article>
-</article>
-</div>
- 
-<div id="corps">
-    <h2>Jérôme Carrand</h2> <br>
-  Normalien élève en 3ème année à l'ENS Paris-Saclay. <br>
-  
-<hr>
-  
-  <h2>Formation suivie</h2>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Jérôme Carrand">
+		<title>Jérôme Carrand</title>
+		<link rel="shortcut icon" href="/images/logo.png"/>
+		<link href="/css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+	
+		<div id="menu">  
+			<article class="menu">
+			<img src="/images/logo.png" alt="projection sur la sphère attracteur stage M1">
+				<article class="case">
+					<h3><a href="/" {{ accueil_on }}>Accueil</a></h3>
+				</article>
+				<article class="case">
+					<h3><a href="/formation/" id="rouge" >Formation</a></h3>
+						<ul>
+							<li><a href="/formation/ARPE.html" {{ ARPE_on }}>ARPE</a></li><br>
+							<li><a href="/formation/M2.html" {{ M2_on }}>M2</a></li><br>
+							<li><a href="/formation/M1.html" {{ M1_on }}>M1</a></li><br>
+							<li><a href="/formation/L3.html" {{ L3_on }}>L3</a></li>
+						</ul>
+				</article>
+				<article class="case">
+					<h3><a href="/stages.html" {{ stages_on }}>Stages</a></h3>
+				</article>
+			</article>
+		</div>
+		
+		<div id="corps">
+			<h2> Jérôme Carrand </h2> <br>
+			Normalien élève en 4ème année à l'ENS Paris-Saclay. <br>
+			<hr><br>
+			<h2>Formation suivie</h2>
   <ul>
   <li> <b>Master 2 </b><a href="http://mathfond.math.upmc.fr/index.html">Mathématiques fondamentales</a> à Sorbonne Université (2018-2019)
       <ul>
         <li> Période 1
           <ul>
-            <li>Géométrie riemannienne, <a href="https://webusers.imj-prg.fr/~julien.marche/">Julien Marché</a>
+            <li>Géométrie différentielle et riemannienne, <a href="https://webusers.imj-prg.fr/~julien.marche/">Julien Marché</a>
             <li>Introduction aux surfaces de Rimann, <a href="https://webusers.imj-prg.fr/~marco.maculan/">Marco Maculan</a>
           </ul>
         <li> Période 2
@@ -62,10 +56,10 @@
         <li> Période 4
           <ul>
             <li>Géométrie et Dynamique, <a href="https://webusers.imj-prg.fr/~anton.zorich/">Anton Zorich</a>
-            <li>Parabolic Dynamical Systems, Giovanni Forni
-            <li>Déformations de groupes discrets dans les groupes de Lie, <a href="http://www.math.ens.fr/~tholozan/">Nicolas Tholozan</a>
+            <li>Parabolic Dynamical Systems, <a href="https://www-math.umd.edu/people/faculty/item/299-gforni.html#bio">Giovanni Forni</a>
           </ul>
-        <li> Stage
+        <li> Mémoire de M2 effectué sous la direction d'<em>Yves Coudène</em>.
+		<p align="justify">Sur une preuve simple du mélange topologique du flot géodésique des surfaces hyperboliques. L'objectif est d'obtenir des preuves courtes par des arguments topologiques des propriétés de dynamique topologique du flot géodésique sur les surfaces hyperboliques grâce à une caractérisation à partir des fonctions propres ou invariantes de l'opérateur de composition sur une classe de fonctions adéquate.</p>
       </ul>       
   <li> <b>Master 1 </b><a href="http://math.ens-paris-saclay.fr/version-francaise/formations/formation-en-mathematiques-de-l-ens-cachan-ex-magistere-/2eme-annee-le-m1-hadamard/">Hadamard</a>, commun à l'ENS Paris-Saclay, l'École Polytechnique et l'Université Paris Saclay (2017-2018)
       <ul>
@@ -114,7 +108,7 @@
       </ul>
       <li> Classes préparatoires MPSI-MP* au lycée Louis Le Grand, Paris (2014-2016)
   </ul>
-  </div>
-</body>
-
+		</div>
+	</body>
 </html>
+	

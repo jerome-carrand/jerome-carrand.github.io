@@ -1,0 +1,186 @@
+html {
+	background-color: #F7F7F7;
+}
+
+/* ______________________________________ */
+
+/* Modules principaux - debut */
+body {
+	width: 1000px;
+	margin: 0 auto 0 auto;
+	background-color: rgba(32,127,155,0.45);
+	padding: 0 20px 0 20px;
+	/*rder: 5px solid black;*/
+}
+
+#corps {
+	display : inline-block;
+	vertical-align : top;
+	width : 650px;
+	min-height: 90vh;
+	margin-left: 20px;
+	padding: 20px;
+	background-color: white;
+	/*border: 5px solid black;*/
+}
+
+#menu {
+	display : inline-block;
+	border-radius: 10px;
+	width : auto;
+	height: 100%;
+	margin: 20px;
+	background-color: white;
+	/*border: 5px solid black;*/
+}
+/* Modules principaux - fin */
+
+/* ______________________________________ */
+
+/* Class Tableaux - debut */
+.menu {
+	display : inline-block;
+	margin: 0 auto;
+	padding: 4px;
+	/*background-color: #eee;*/
+	font: 20px;
+}
+
+.case {
+	margin: 8px;
+	padding: 5px;
+	font-size: 20px;
+	background: rgba(32,127,155,0.2);
+}
+
+.case > h2,
+.case > h3,
+.case > p {
+	margin: 3px;
+	font-size: 20px;
+}
+/* Class Tableaux - fin */
+
+/* ______________________________________ */
+
+/* Font size - debut */
+/*h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 5px 0 25px;
+}*/
+
+h1 {
+	font-size: 50px;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	display:inline-block;
+	font-size: 25px;
+	margin-bottom: 0px
+}
+
+h5 {
+	font-size: 20px;
+}
+
+h6 {
+	font-size: 17px;
+}
+/* Font size - fin */
+
+/* ______________________________________ */
+
+/* Styles - debut */
+#menu a
+{
+	font-size: 18px;
+	color: #202020;
+	padding-bottom: 3px;
+	text-decoration: none;
+}
+
+#menu a:hover
+{
+	color: #087EA2;
+	border-bottom: 3px solid #087EA2;
+}
+
+#menu ul
+{
+	list-style-type: none;
+}
+
+
+#rouge
+{
+	color : #087EA2 !important;
+	border-bottom: 3px solid #087EA2;
+}
+
+/* Styles - fin */
+
+/* ______________________________________ */
+
+/* Navigation - debut */
+.accueil,
+.formation,
+.ARPE,
+.M2,
+.M1,
+.L3,
+.stages{
+}
+
+active_accueil,
+active_formation,
+active_ARPE,
+active_M2,
+active_M1,
+active_L3,
+active_stages {
+}
+
+.accueil > active_accueil,
+.formation > active_formation, 
+.ARPE > active_ARPE,
+.M2 > active_M2,
+.M1 > active_M1,
+.L3 > active_L3,
+.stages > active_stages {
+	color : #087EA2 !important;
+	border-bottom: 3px solid #087EA2;
+}
+
+/* Navigation - fin */
+
+.inlineblock {
+	display: inline-block;
+	width: 49%
+}
+.fit-picture {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 55%;
+}
+.fit-pictures {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 65%;
+}

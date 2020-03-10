@@ -1,45 +1,89 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="author" content="Jérôme Carrand">
-    <title>Jérôme Carrand</title>
-    <link rel="shortcut icon" href="../images/logo.png"/>
-    <link href="../styles/style.css" rel="stylesheet" type="text/css">
-
-  </head>
-
-  
-  
-
-<body>
-
-<div id="menu">  
-<article class="menu">
-    <img src="../images/logo.png" alt="projection sur la sphère attracteur stage M1">
-    <article class="case">
-        <h2><a href="../index.html">Accueil</a></h2>
-    </article>
-    <article class="case">
-        <h2><a href="index.html" >Formation</a></h2>
-        <ul>
-          <li> <a href="M2.html" id="rouge">M2</a></li><br>
-          <li> <a href="M1.html" >M1</a></li><br>
-          <li> <a href="L3.html" >L3</a></li>
-        </ul>
-    </article>
-    <article class="case">
-        <h2><a href="../stages.html" >Stages</a></h2>
-    </article>
-</article>
-</div>
- 
-<div id="corps">
-    <h2>Jérôme Carrand</h2> <br>
-  Normalien élève en 3ème année à l'ENS Paris-Saclay. <br>
-  
-<hr>
-</div>
-</body>
-
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Jérôme Carrand">
+		<title>Jérôme Carrand</title>
+		<link rel="shortcut icon" href="/images/logo.png"/>
+		<link href="/css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+	
+		<div id="menu">  
+			<article class="menu">
+			<img src="/images/logo.png" alt="projection sur la sphère attracteur stage M1">
+				<article class="case">
+					<h3><a href="/" {{ accueil_on }}>Accueil</a></h3>
+				</article>
+				<article class="case">
+					<h3><a href="/formation/" {{ formation_on }} >Formation</a></h3>
+						<ul>
+							<li><a href="/formation/ARPE.html" {{ ARPE_on }}>ARPE</a></li><br>
+							<li><a href="/formation/M2.html" id="rouge">M2</a></li><br>
+							<li><a href="/formation/M1.html" {{ M1_on }}>M1</a></li><br>
+							<li><a href="/formation/L3.html" {{ L3_on }}>L3</a></li>
+						</ul>
+				</article>
+				<article class="case">
+					<h3><a href="/stages.html" {{ stages_on }}>Stages</a></h3>
+				</article>
+			</article>
+		</div>
+		
+		<div id="corps">
+			<h2> Jérôme Carrand </h2> <br>
+			Normalien élève en 4ème année à l'ENS Paris-Saclay. <br>
+			<hr><br>
+			<b>Master 2 </b><a href="http://mathfond.math.upmc.fr/index.html">Mathématiques fondamentales</a> à Sorbonne Université (2018-2019)
+<ul>
+	<li> Période 1
+	<ul>
+		<li> Géométrie différentielle et riemannienne, <a href="https://webusers.imj-prg.fr/~julien.marche/">Julien Marché</a>
+		<p align="justify"> Géométrie différentielle : Variétés, sous-variétés, fibrés vectoriels, champs de vecteurs, théorème de Frobenius, formes différentielles, théorème de Stokes, orientablilité, cohomologie de De Rham. Étude des connexions : connexions comme dérivées covariantes, transport parallèle, courbure, distributions horizontales <br>
+		Géométrie riemnannienne : métrique riemmannienne, isométries, connexion de Levi-Civita, équation des géodésiques, fonction exponentielle, courbure riemannienne, seconde forme fondamentale.		
+		</p>
+		<li>Introduction aux surfaces de Riemann, <a href="https://webusers.imj-prg.fr/~marco.maculan/">Marco Maculan</a>
+		<p align="justify"> Stucture de surface de Riemann, fonctions holomorphes et méromorphes. Revêtements ramifiés. Fonctions elliptiques et fonction P de Weierstrass. Plongement projectif de courbes elliptiques, classification des fonctions elliptiques en terme de combinaisons rationnelles des fonctions de Weierstrass. Structure complexe sur les quotient de surfaces de Riemann. Formes différentielles holomorphes et méromorphes, diviseurs et degrés, formule de Riemann-Hurwitz, triangulation du surface et genre topologique. Théorème de Riemann-Roch pour les courbes elliptiques.
+		</p>
+	</ul>
+	<li> Période 2
+	<ul>
+		<li>Systèmes dynamiques I, <a href="https://www.lpsm.paris/pageperso/coudene/">Yves Coudène</a>
+		<p align="justify">Dynamique topologique : définition et exemples de transformations mélangeantes, transitives. Notions de points récurrents, de points périodiques, d'ensemble non-errant. Propriétés génériques sur l'ensemble non-errant dans le cas d'espaces séparables. <br>
+		Théorèmes ergodiques : Von Neumann, Birkhoff. Caractérisation spectrale de l'ergodicité et du mélange métrique. <br>
+		Homéomorphismes du cercle : nombre de rotation de Poincaré, théorème de Denjoy. <br>
+		Entropie métrique : partitions mesurables finies, entopie statique, entropie relative à une partition, entropie métrique. Partitions génératrices, théorème de Kolmogorov-Sinaï. Liens avec la théorie de l'information. <br>
+		Introduction à la dynamique du flot géodésique des surfaces en courbure -1.
+		</p>
+		<li>Introduction à la géométrie sous-riemannienne, <a href="https://webusers.imj-prg.fr/~davide.barilari/">Davide Barilari</a>
+		<p align="justify"> Structures sous-riemannienne, courbes admissibles et distances. Théorème de Rashevskii-Chov. Existence de courbe minimisant la longueur : complétude de la distance sous-riemannienne. Extrema de Pontryagin : stucture symplectique, caractérisation des extrema normaux et anormaux.
+		</p>
+	</ul>
+	<li> Période 3
+	<ul>
+		<li>Systèmes dynamiques II, <a href="https://webusers.imj-prg.fr/~patrice.le-calvez/">Patrice Le Calvez</a>
+		<p align="justify"> Cours consacré aux méthodes d'étude de systèmes dynamiques uniformément hyperboliques. <br>
+		Sous-décalages de type fini. Théorème de la variété stable et théorème de Grobman-Hartman. Difféomorphismes linéaires du tore. Partition de Markov. Entropie topologique et principe variationnel.
+		</p>
+		<li>Variétés de caractères et structure hyperbolique en dimension 3, <a href="https://webusers.imj-prg.fr/~antonin.guilloux/drupal/">Antonin Guilloux</a>
+		<p align="justify"> Triangulation des variétés de dimension 3. Étude combinatoire du modèle triangulé en terme de variété de caractères et problème d'existence de structure hyperbolique. Théorème de chirurgies de Dehn hyperbolique de Thurston. Volume des variétés hyperboliques de dimension 3.
+		</p>
+	</ul>
+	<li> Période 4
+	<ul>
+		<li>Géométrie et Dynamique, <a href="https://webusers.imj-prg.fr/~anton.zorich/">Anton Zorich</a>
+		<p align="justify"> Survol des résultats de Mirzakhani sur le comptage des géodésiques simples ; sur le comptage de volumes de Weil-Petersson de l’espace de modules de surfaces hyperboliques à bord géodésique ; l’idée de sa preuve de la conjecture de Witten. Survol des théorèmes de rigidité d’Eskin-Mirzakhani-Mohammadi. Introduction basique en géométrie des surfaces hyperboliques. Faits basiques sur l’espace de Teichmüller et sur l’espace des modules. Intégration par rapport à l’espace des modules élaborée par Mirzakhani. Voies ferrées (train-tracks) ; espace de laminations géodésiques ; ergodicité de l’action du groupe modulaire. Comptage des géodésiques simples. Réduction symplectique. Comptage de volumes de Weil-Petersson de l’espace de modules de surfaces hyperboliques à bord géodésique. Idée de la preuve de Mirzakhani de la conjecture de Witten plus détaillée.
+		</p>
+		<li>Parabolic Dynamical Systems, <a href="https://www-math.umd.edu/people/faculty/item/299-gforni.html#bio">Giovanni Forni</a>
+		<p align="justify"> Équation cohomologique et distributions invariantes ; solution issue de résultats d'analyse harmonique dans le cas des flots de translations. Description des travaux récents de Giulietti, Liverani et de Faure, Gouëzel et Lanneau concernant les directions invariantes de difféomorphismes pseudo-Anosov, fondés sur des méthodes de dynamique hyperbolique. Discussion sur le lien entre les obstructions à l'existence de solution de l'équation cohomologique pour des flots instables et les résonnaces de Ruelle.<br>
+		Résultats effectifs d'équidistribution : présentation d'une approche par renormalisation inspirée par les travaux de Kontsevich et Zorich pour les échanges d'intervalles. <br>
+		Discussion autour de questions issues de la théorie ergodique ; distributions limites pour les flots de translation, les flots horocycliques, les flots nilpotents ; mélange ; vitesse de décorrelation et propriétés spectales pour les flots de translation et pour les reparamétrisation de flots homogènes.
+		</p>
+	</ul>
+	<li> Mémoire de M2 effectué sous la direction d'<em>Yves Coudène</em>. 
+          <p align="justify">Sur une preuve simple du mélange topologique du flot géodésique des surfaces hyperboliques. L'objectif est d'obtenir des preuves courtes par des arguments topologiques des propriétés de dynamique topologique du flot géodésique sur les surfaces hyperboliques grâce à une caractérisation à partir des fonctions propres ou invariantes de l'opérateur de composition sur une classe de fonctions adéquate.</p>
+    </ul>
+		</div>
+	</body>
 </html>
+	

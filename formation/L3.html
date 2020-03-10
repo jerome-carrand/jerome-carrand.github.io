@@ -1,45 +1,62 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="author" content="Jérôme Carrand">
-    <title>Jérôme Carrand</title>
-    <link rel="shortcut icon" href="../images/logo.png"/>
-    <link href="../styles/style.css" rel="stylesheet" type="text/css">
-
-  </head>
-
-  
-  
-
-<body>
-
-<div id="menu">  
-<article class="menu">
-    <img src="../images/logo.png" alt="projection sur la sphère attracteur stage M1">
-    <article class="case">
-        <h2><a href="../index.html">Accueil</a></h2>
-    </article>
-    <article class="case">
-        <h2><a href="index.html" >Formation</a></h2>
-        <ul>
-          <li> <a href="M2.html" >M2</a></li><br>
-          <li> <a href="M1.html" >M1</a></li><br>
-          <li> <a href="L3.html" id="rouge">L3</a></li>
-        </ul>
-    </article>
-    <article class="case">
-        <h2><a href="../stages.html" >Stages</a></h2>
-    </article>
-</article>
-</div>
- 
-<div id="corps">
-    <h2>Jérôme Carrand</h2> <br>
-  Normalien élève en 3ème année à l'ENS Paris-Saclay. <br>
-  
-<hr>
-</div>
-</body>
-
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Jérôme Carrand">
+		<title>Jérôme Carrand</title>
+		<link rel="shortcut icon" href="/images/logo.png"/>
+		<link href="/css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+	
+		<div id="menu">  
+			<article class="menu">
+			<img src="/images/logo.png" alt="projection sur la sphère attracteur stage M1">
+				<article class="case">
+					<h3><a href="/" {{ accueil_on }}>Accueil</a></h3>
+				</article>
+				<article class="case">
+					<h3><a href="/formation/" {{ formation_on }} >Formation</a></h3>
+						<ul>
+							<li><a href="/formation/ARPE.html" {{ ARPE_on }}>ARPE</a></li><br>
+							<li><a href="/formation/M2.html" {{ M2_on }}>M2</a></li><br>
+							<li><a href="/formation/M1.html" {{ M1_on }}>M1</a></li><br>
+							<li><a href="/formation/L3.html" id="rouge">L3</a></li>
+						</ul>
+				</article>
+				<article class="case">
+					<h3><a href="/stages.html" {{ stages_on }}>Stages</a></h3>
+				</article>
+			</article>
+		</div>
+		
+		<div id="corps">
+			<h2> Jérôme Carrand </h2> <br>
+			Normalien élève en 4ème année à l'ENS Paris-Saclay. <br>
+			<hr><br>
+			<li> <b>License 3</b> à l'<a href="http://math.ens-paris-saclay.fr/version-francaise/formations/formation-en-mathematiques-de-l-ens-cachan-ex-magistere-/1ere-annee-le-l3/">ENS Paris-Saclay</a> (2016-2017)
+      <ul>
+        <li> Semestre 1
+          <ul>
+            <li>Intégration-Probabilités, <a href="http://atrouve.perso.math.cnrs.fr/index.html">Alain Trouvé</a>
+            <li>Calcul différentiel,  <a href="https://sites.google.com/site/fredppascal/">Frédéric Pascal</a>
+            <li>Analyse de Fourier et de Hilbert, Enric Meinhardt-Llopis
+            <li>Méthodes numériques pour les EDOs, <a href="https://sites.google.com/site/fredppascal/">Frédéric Pascal</a>
+            <li>Algèbre, <a href="https://webusers.imj-prg.fr/~antoine.chambert-loir/index.xhtml">Antoine Chambert-Loir</a> 
+            <li>Mécanique quantique, Jean-François Roch
+          </ul>
+        <li> Semestre 2
+          <ul>
+            <li>Analyse complexe, <a href="https://webusers.imj-prg.fr/~marc.hindry/">Marc Hindry</a>
+            <li>Probabilité 2, <a href="https://www.lpsm.paris//pageperso/youssef/">Pierre Youssef</a>
+            <li>Méthodes numériques pour les EDPs, <a href="http://simulation.model.free.fr/ftp/Web_JMG/">Jean-Michel Ghidaglia</a> 
+            <li><b>Stage de recherche</b> de mars à juin au CMLA (Cachan) sous la direction de <em>Frédéric Pascal</em>. 
+              <p align="justify">Méthodes probabilistes numériques pour la résolution d'équations différentielles ordinaires.
+              Étude de la convergence d'un schéma probabiliste numérique où la solution d'une EDO est estimée par un processus gaussien grâce à une méthode itérative qui à chaque pas de dicrétisation temporelle 
+              conditionne le processus courant par une copie indépendante pour obtenir le nouveau processus gaussien.</p>
+          </ul>
+      </ul>
+		</div>
+	</body>
 </html>
+	

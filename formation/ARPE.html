@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="author" content="Jérôme Carrand">
-    <title>Jérôme Carrand</title>
-    <link rel="shortcut icon" href="../images/logo.png"/>
-    <link href="../styles/style.css" rel="stylesheet" type="text/css">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Jérôme Carrand">
+		<title>Jérôme Carrand</title>
+		<link rel="shortcut icon" href="/images/logo.png"/>
+		<link href="/css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+	
+		<div id="menu">  
+			<article class="menu">
+			<img src="/images/logo.png" alt="projection sur la sphère attracteur stage M1">
+				<article class="case">
+					<h3><a href="/" {{ accueil_on }}>Accueil</a></h3>
+				</article>
+				<article class="case">
+					<h3><a href="/formation/" {{ formation_on }} >Formation</a></h3>
+						<ul>
+							<li><a href="/formation/ARPE.html" id="rouge">ARPE</a></li><br>
+							<li><a href="/formation/M2.html" {{ M2_on }}>M2</a></li><br>
+							<li><a href="/formation/M1.html" {{ M1_on }}>M1</a></li><br>
+							<li><a href="/formation/L3.html" {{ L3_on }}>L3</a></li>
+						</ul>
+				</article>
+				<article class="case">
+					<h3><a href="/stages.html" {{ stages_on }}>Stages</a></h3>
+				</article>
+			</article>
+		</div>
+		
+		<div id="corps">
+			<h2> Jérôme Carrand </h2> <br>
+			Normalien élève en 4ème année à l'ENS Paris-Saclay. <br>
+			<hr><br>
+			<p align="justify">Dans le cadre du diplome de l'ENS Paris-Saclay, j'ai effectué en 2019/2020 une Année de Recherche Prédoctorale à l'Étranger (ARPE) à L'Institut de Mathématiques de l'Université de Zurich, sous la direction de Corinna Ulcigrai. </p>
 
-  </head>
+<p align="justify">L'objectif de ce stage est d'étendre au cas des surfaces de genre au moins 2 les travaux que j'ai effectué en M1 sur le tore. En particulier j'étudie une classe de fonctions obtenues par perturbation d'un difféomorphisme pseudo-Anosov en tous ses points coniques. Chaque fonction de cette classe a la particularité de posséder un attracteur non trivial dont on se propose de donner une étude.<br><br>
 
-  
-  
+Dans un premier temps on s'intéresse aux fondements de la théorie de Teichmüller et plus particulièrement au théorème de classification de Nielsen-Thurston. Celui-ci permet de comprendre en quoi les difféomorphismes pseudo-Anosov ne sont pas des objets pathologiques, dont l'étude est importante pour comprendre la totalité des transformations lisses des surfaces.<br>
 
-<body>
+On donne par la suite une construction explicite de transformations dérivées d'Anosov. On montre que pour un bon choix de paramètres, ces transformations possèdent un attracteur et que celui ci est toujours connexe et hyperbolique. L'application considérée y est transitive. L'étude de la transformation est alors reliée à celle d'un flot qu'elle renormalise. Par suspension, l'étude de ce flot se ramène alors à celle du comportement dynamique d'un échange d'intervalles généralisé. Par chance, ce dernier est semi-conjugué à un échange d'intervalles (par translations) associé à un pseudo-Anosov.<br>
 
-<div id="menu">  
-<article class="menu">
-    <img src="../images/logo.png" alt="projection sur la sphère attracteur stage M1">
-    <article class="case">
-        <h2><a href="../index.html">Accueil</a></h2>
-    </article>
-    <article class="case">
-        <h2><a href="index.html" >Formation</a></h2>
-        <ul>
-          <li> <a href="M2.html" id="rouge">M2</a></li><br>
-          <li> <a href="M1.html" >M1</a></li><br>
-          <li> <a href="L3.html" >L3</a></li>
-        </ul>
-    </article>
-    <article class="case">
-        <h2><a href="../stages.html" >Stages</a></h2>
-    </article>
-</article>
-</div>
- 
-<div id="corps">
-    <h2>Jérôme Carrand</h2> <br>
-  Normalien élève en 3ème année à l'ENS Paris-Saclay. <br>
-  
-<hr>
-</div>
-</body>
+Ceci nous permet de donner un rapide aperçu de la théorie des échanges d'intervalles, notamment le processus de renormalisation de Rauzy-Veech.<br>
 
+Finalement, on obtient l'unique ergodicité du flot associé au problème. La relation de renormalisation nous permet d'obtenir une mesure par rapport à laquelle la transformation initiale est mélangeante.
+</p>
+
+<p align="justify">
+On donne une illustration dans le cas d'une surface de genre 2, dont on peut expliciter sans trop de peine un difféomorphisme pseudo-Anosov. La figure représente l'attracteur associé à une transformation dérivée d'Anosov explicite.</p>
+
+<img class="fit-picture" src="/images/octogone.png" alt="attracteur associé dans le cas d'une transformation sur une surface de genre 2">
+
+		</div>
+	</body>
 </html>
+	
