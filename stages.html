@@ -2,10 +2,11 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<meta name="author" content="Jérôme Carrand">
+		<meta name="author" content="Jérôme Carrand" />
 		<title>Jérôme Carrand</title>
-		<link rel="shortcut icon" href="/images/logo.png"/>
-		<link href="/css/style.css" rel="stylesheet" type="text/css">
+		<link rel="shortcut icon" href="/images/logo.png" />
+		<link href="/css/style.css" rel="stylesheet" type="text/css" />
+		<meta name="{{ register }}" />
 	</head>
 	<body>
 	
@@ -16,7 +17,10 @@
 					<h3><a href="/" {{ accueil_on }}>Accueil</a></h3>
 				</article>
 				<article class="case">
-					<h3><a href="/formation/" {{ formation_on }} >Formation</a></h3>
+					<h3><a href="/these.html" {{ these_on }}>Thèse</a></h3>
+				</article>
+				<article class="case">
+					<h3><a href="/formation/" {{ formation_on }}>ENS Paris-Saclay</a></h3>
 						<ul>
 							<li><a href="/formation/ARPE.html" {{ ARPE_on }}>ARPE</a></li><br>
 							<li><a href="/formation/M2.html" {{ M2_on }}>M2</a></li><br>
@@ -32,15 +36,12 @@
 		
 		<div id="corps">
 			<h2> Jérôme Carrand </h2> <br>
-			Normalien élève en 4ème année à l'ENS Paris-Saclay. <br>
+			Doctorant au <a href="http://www.lpsm.paris/">LPSM</a>, sous la direction de <a href="http://baladi.perso.math.cnrs.fr/">Viviane Baladi</a>.<br>
 			<hr><br>
 			<h4>Mémoire de M2</h4> effectué sous la direction d'Yves Coudène au LPSM (Jussieu, Paris).
-<p align="justify" style="margin-top: 0px">
-Ce mémoire a pour but d'établir des comparaisons entre dynamique mesurée et dynamique topologique pour le flot géodésique d'une surface de courbure constante -1. Ce travail se décompose essentiellement en quatre parties.<br><br>
+<p align="justify" style="margin-top: 0px">Ce mémoire a pour but d'établir des comparaisons entre dynamique mesurée et dynamique topologique pour le flot géodésique d'une surface de courbure constante -1. Ce travail se décompose essentiellement en quatre parties.<br><br>
 
-
-Dans un premier temps, nous introduisons deux façons d'appréhender des surfaces ainsi que leurs fibrés tangents unitaires, le premier de nature algébrique et le second de nature davantage géométrique.
-Ce dernier, d'apparence plus géométrique nous permet de traiter les surfaces de genre au moins 2. Pour cela nous nous intéressons au demi-plan supérieur du plan complexe, appelé demi-espace de Poincaré, que nous munissons d'une métrique dite hyperbolique. Nous y définissons la notion de longueur d'une courbe et nous décrivons la nature géométrique des géodésiques. Pour cela, nous identifions le groupe d'isométries du demi-plan de Poincaré. Enfin, on étend la métrique en une métrique sur le fibré tangent unitaire et explicitons une expression des géodésiques, cette expression prend la forme d'un flot. Nous présentons aussi un autre modèle, de nature algébrique. Il s'agit du groupe de matrice PSL(2,&#8477;) pour lequel nous définissons également les flots géodésique et horocycliques comme l'action par produit matriciel de certains sous-groupes. Enfin, nous explicitons une bijection entre ces deux modèles qui conjugue respectivement les flots géodésiques et horocycliques.<br><br>
+Dans un premier temps, nous introduisons deux façons d'appréhender des surfaces ainsi que leurs fibrés tangents unitaires, la première de nature algébrique et la seconde de nature davantage géométrique. Ce dernier, d'apparence plus géométrique nous permet de traiter les surfaces de genre au moins 2. Pour cela nous nous intéressons au demi-plan supérieur du plan complexe, appelé demi-espace de Poincaré, que nous munissons d'une métrique dite hyperbolique. Nous y définissons la notion de longueur d'une courbe et nous décrivons la nature géométrique des géodésiques. Pour cela, nous identifions le groupe d'isométries du demi-plan de Poincaré. Enfin, on étend la métrique en une métrique sur le fibré tangent unitaire et explicitons une expression des géodésiques, cette expression prend la forme d'un flot. Nous présentons aussi un autre modèle, de nature algébrique. Il s'agit du groupe de matrices PSL(2,&#8477;) pour lequel nous définissons également les flots géodésique et horocycliques comme l'action par produit matriciel de certains sous-groupes. Enfin, nous explicitons une bijection entre ces deux modèles qui conjugue respectivement les flots géodésiques et horocycliques.<br><br>
 
 Dans une seconde partie, nous définissons les principales notions de dynamique lorsqu'il existe des mesures invariantes, telles que l'ergodicité et le mélange. Nous en donnons plusieurs caractérisations et nous montrons qu'elles sont équivalentes. Par ailleurs, nous énonçons des résultats qui traitent les espaces <var>L<sup>p</sup></var> comme des espaces topologiques. On munit l'espace des fonctions mesurables, par rapport à une certaine mesure, d'une topologie dont les propriétés dépendent de celles de la mesure. On démontre des résultats de densité de fonctions régulières dans certains espaces <var>L<sup>p</sup></var>. Enfin, on introduit succinctement la notion de fonction Riemann-intégrable.<br><br>
 
@@ -65,12 +66,11 @@ En dernière partie, nous constatons un certain nombre de similarités dans les 
 
 
 <h4>Mémoire de M1</h4> effectué sous la direction d'Yves Coudène au LMBA (UBO, Brest).
-<p align="justify" style="margin-top: 0px">
-Dans ce stage, on se propose d'étudier la transformation sur le tore bidimensionnel définie dans [Coudène2013], issue d'une perturbation d'un automorphisme linéaire du tore. On montre que celle ci possède un compact invariant <var>K</var> et que celui ci est un attracteur. Le but du stage est alors de construire une mesure de probabilité de support <em>K</em>, invariante par la transformation, qui rende la transformation mélangeante en restriction à <var>K</var>.<br><br>
+<p align="justify" style="margin-top: 0px">Dans ce stage, on se propose d'étudier la transformation sur le tore bidimensionnel définie dans [Coudène2013], issue d'une perturbation d'un automorphisme linéaire du tore. On montre que celle ci possède un compact invariant <var>K</var> et que celui ci est un attracteur. Le but du stage est alors de construire une mesure de probabilité de support <em>K</em>, invariante par la transformation, qui rende la transformation mélangeante en restriction à <var>K</var>.<br><br>
 
 Dans la première section, on commence par donner quelques propriétés élémentaires de la transformation considérée. Celles-ci nous permettent de montrer des propriétés, énoncées dans [Coudène2013], de nature topologique sur le compact <var>K</var>, en particulier on montrera que <var>K</var> est d'intérieur vide, connexe et possède un point d'orbite dense dans <var>K</var>. On s'intéresse également aux liens entre la transformation <var>f</var> et son compact invariant <var>K</var>. On montre notamment que <var>K</var> est un attracteur pour <var>f<sup> -1</sup></var> et répulseur pour <var>f</var>. Enfin, on cherche à munir l'ensemble <var>K</var> d'une structure dite hyperbolique. Pour cela, on construit explicitement deux fibrations de l'espace tangent du tore. On énoncera sans démonstration quelques conséquences de l'hyperbolicité de <var>K</var>. Ces propriétés de nature générale sur les ensembles hyperboliques peuvent être trouvées dans [Bowen1970markov], [BrinStuck2002], [KatokHasselblatt1997] et dans [Robinson1998dynamical]. On donnera des représentations graphiques du compact <var>K</var> pour différents paramètres de <var>f</var>.<br><br>
 
-Dans la deuxième section, on montre que l'expression du champ de vecteurs <var>v<sup>s</sup></var>, donnée dans la partie précédente, est encore valide sur tout le tore et donne lieu à un champ de vecteurs globalement lipschitzien, moyennant une hypothèse supplémentaire sur l'amplitude <var>p<sub>1</sub></var> de la perturbation de <var>f</var>. On considère le flot <var>(h<sub>t</sub>)<sub>t</sub></var> associé. On montre que celui-ci possède une propriété de commutation avec la transformation <var>f</var>, plus précisément on montre que <var>f &compfn; h<sub>t</sub> = h<sub>&lambda;<sup>-2</sup>t</sub> &compfn; f</var>. Cette relation implique un fort lien entre le flot et la transformation, que nous exploitons pour montrer l'invariance de <var>K</var> par le flot <var>(h<sub>t</sub>)<sub>t</sub></var> et que ce flot ne possède pas d'orbite périodique. On montre également que les ensembles &alpha;-limite et &omega;-limite de tout point de <var>U</var> par le flot <var>(h<sub>t</sub>)<sub>t</sub></var> sont exactement <var>K</var>. Ces propriétés donnent de nouveaux renseignements sur la structure du compact <var>K</var>.<br><br>
+Dans la deuxième section, on montre que l'expression du champ de vecteurs <var>v<sup>s</sup></var>, donnée dans la partie précédente, est encore valide sur tout le tore et donne lieu à un champ de vecteurs globalement lipschitzien, moyennant une hypothèse supplémentaire sur l'amplitude <var>p<sub>1</sub></var> de la perturbation de <var>f</var>. On considère le flot <var>(h<sub>t</sub>)<sub>t</sub></var> associé. On montre que celui-ci possède une propriété de commutation avec la transformation <var>f</var>, plus précisément on montre que <var>f &compfn; h<sub>t</sub> = h<sub>&lambda;<sup>-2</sup>t</sub> &compfn; f</var>. Cette relation implique un fort lien entre le flot et la transformation, que nous exploitons pour montrer l'invariance de <var>K</var> par le flot <var>(h<sub>t</sub>)<sub>t</sub></var> et que ce flot ne possède pas d'orbite périodique. On montre également que les ensembles &#945;-limite et &#969;-limite de tout point de <var>U</var> par le flot <var>(h<sub>t</sub>)<sub>t</sub></var> sont exactement <var>K</var>. Ces propriétés donnent de nouveaux renseignements sur la structure du compact <var>K</var>.<br><br>
 
 Enfin, dans la troisième section, on étudie plus précisément les mesures invariantes par le flot <var>(h<sub>t</sub>)<sub>t</sub></var>. On commence par rappeler la définition de l'invariance d'une mesure par une transformation, puis on énonce quelques propriétés générales portant sur l'ensemble des mesures invariantes pour une certaine dynamique, ces propriétés étant énoncées et démontrées dans [Walters2000introduction]. On montre alors que le flot <var>(h<sub>t</sub>)<sub>t</sub></var> possède une unique mesure invariante, supportée dans <var>K</var> et est minimal en restriction à <var>K</var>. On montre finalement que cette mesure est invariante par <var>f</var> et qu'elle rend cette transformation mélangeante.
 </p>
