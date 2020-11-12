@@ -185,8 +185,3 @@ active_stages {
 	width: 65%;
 }
 
-window.MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']]
-  }
-};
