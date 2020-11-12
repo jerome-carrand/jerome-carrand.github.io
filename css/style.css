@@ -184,3 +184,9 @@ active_stages {
 	margin-right: auto;
 	width: 65%;
 }
+
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
