@@ -190,3 +190,6 @@ active_stages {
 	margin-right: auto;
 	width: 65%;
 }
+.expended li {
+	margin-bottom: 0.4em;
+}
