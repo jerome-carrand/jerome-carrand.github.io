@@ -82,7 +82,7 @@ Here is an example of such billiard table, with 5000 trajectories starting from 
             // Draw the central circular obstacle
             ctx.beginPath();
             ctx.arc(width / 2, height / 2, radius, 0, Math.PI * 2);
-            ctx.fillStyle = 'black';
+            ctx.fillStyle = 'dimgrey';
             ctx.fill();
             
             // Draw the obstacle in the corner
@@ -90,7 +90,7 @@ Here is an example of such billiard table, with 5000 trajectories starting from 
               for (var j = 0; j < 5; j++) {
                 ctx.beginPath();
                 ctx.arc(i*width, j*height, radius2, 0, Math.PI * 2);
-                ctx.fillStyle = 'black';
+                ctx.fillStyle = 'dimgrey';
                 ctx.fill();
               }
             }
@@ -99,7 +99,7 @@ Here is an example of such billiard table, with 5000 trajectories starting from 
             for (var i = 0; i < numPart; i++){
               ctx.beginPath();
               ctx.arc(ball.x[i], ball.y[i], ball.radius, 0, Math.PI * 2);
-              ctx.fillStyle = 'red';
+              ctx.fillStyle = 'deepskyblue';
               ctx.fill();
             }
         }
