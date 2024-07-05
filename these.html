@@ -49,8 +49,9 @@
 My PhD subject is about Sinai Billiards. The aim is to prove existence and uniqueness of the measure of maximal entropy of the Sinai Billiard Flow, using Transfer Operator techniques.
 </p>
 <br>
-
-<canvas id="billiardCanvas" width="600" height="600">
+Here is an example of such billiard table, with 5000 trajectories starting from nearby initial conditions.
+<center>
+<canvas id="billiardCanvas" width="450" height="450">
 
     <script>
         const canvas = document.getElementById('billiardCanvas');
@@ -58,13 +59,13 @@ My PhD subject is about Sinai Billiards. The aim is to prove existence and uniqu
 
         const width = canvas.width;
         const height = canvas.height;
-        const radius = 150; // Radius of the central circular obstacle
-        const radius2 = 200; // Radius of the other circular obstavcle
+        const radius = 120; // Radius of the central circular obstacle
+        const radius2 = 160; // Radius of the other circular obstavcle
         
         let numPart = 5000; // Number of particules
         let speed = 1
         let ball = {
-            x: Array.apply(null, Array(numPart)).map(function (x, i) { return 210; }),
+            x: Array.apply(null, Array(numPart)).map(function (x, i) { return 150; }),
             y: Array.apply(null, Array(numPart)).map(function (x, i) { return 110; }),
             radius: 3,
             vx: Array.apply(null, Array(numPart)).map(function (x, i) { return speed*Math.cos(4/5 + i*Math.pow(10, -7)); }),
@@ -165,7 +166,7 @@ My PhD subject is about Sinai Billiards. The aim is to prove existence and uniqu
         loop();
     </script>
 </canvas>
-
+</center>
 
 <h4>Propriétés ergodiques des flots en basses dimensions incluant les billards dispersifs</h4>
 <h4>Résumé :</h4>
