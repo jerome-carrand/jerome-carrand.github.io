@@ -50,6 +50,122 @@ My PhD subject is about Sinai Billiards. The aim is to prove existence and uniqu
 </p>
 <br>
 
+<canvas id="billiardCanvas" width="600" height="600">
+
+    <script>
+        const canvas = document.getElementById('billiardCanvas');
+        const ctx = canvas.getContext('2d');
+
+        const width = canvas.width;
+        const height = canvas.height;
+        const radius = 150; // Radius of the central circular obstacle
+        const radius2 = 200; // Radius of the other circular obstavcle
+        
+        let numPart = 5000; // Number of particules
+        let speed = 1
+        let ball = {
+            x: Array.apply(null, Array(numPart)).map(function (x, i) { return 210; }),
+            y: Array.apply(null, Array(numPart)).map(function (x, i) { return 110; }),
+            radius: 3,
+            vx: Array.apply(null, Array(numPart)).map(function (x, i) { return speed*Math.cos(4/5 + i*Math.pow(10, -7)); }),
+            vy: Array.apply(null, Array(numPart)).map(function (x, i) { return speed*Math.sin(3/5); })            
+        };
+        
+        
+        function draw() {
+            ctx.clearRect(0, 0, width, height);
+
+            // Draw the central circular obstacle
+            ctx.beginPath();
+            ctx.arc(width / 2, height / 2, radius, 0, Math.PI * 2);
+            ctx.fillStyle = 'black';
+            ctx.fill();
+            
+            // Draw the obstacle in the corner
+            for (var i = 0; i < 5; i++) {
+              for (var j = 0; j < 5; j++) {
+                ctx.beginPath();
+                ctx.arc(i*width, j*height, radius2, 0, Math.PI * 2);
+                ctx.fillStyle = 'black';
+                ctx.fill();
+              }
+            }
+
+            // Draw the ball
+            for (var i = 0; i < numPart; i++){
+              ctx.beginPath();
+              ctx.arc(ball.x[i], ball.y[i], ball.radius, 0, Math.PI * 2);
+              ctx.fillStyle = 'red';
+              ctx.fill();
+            }
+        }
+
+        function update() {
+            for (var k = 0; k < numPart; k++){
+              ball.x[k] += ball.vx[k];
+              ball.y[k] += ball.vy[k];
+
+              // Check for collisions with the walls
+              if (ball.x[k] < 0){
+                  ball.x[k] += width;
+              } 
+              if (ball.x[k] > width){
+                  ball.x[k] -= width;
+              }
+              if (ball.y[k] < 0){
+                  ball.y[k] += height
+              }
+              if (ball.y[k] > height) {
+                  ball.y[k] -= height;
+              }
+
+              // Check for collision with the central circular obstacle
+              var dx = ball.x[k] - width / 2;
+              var dy = ball.y[k] - height / 2;
+              var distance = Math.sqrt(dx * dx + dy * dy);
+
+              if (distance < radius + ball.radius) {
+                  // Reflect the ball's velocity
+                  var angle = Math.atan2(dy, dx);
+                  var vx = -Math.cos(2*angle)*ball.vx[k] - Math.sin(2*angle)*ball.vy[k];
+                  var vy = - Math.sin(2*angle)*ball.vx[k] + Math.cos(2*angle)*ball.vy[k];
+                  var speed0 = Math.sqrt(vx * vx + vy * vy);
+                  ball.vx[k] = vx/speed0 * speed;
+                  ball.vy[k] = vy/speed0 * speed;
+            }
+          
+              // Check for collision with the other circular obstacle
+              for (var i = 0; i < 2; i++) {
+                for (var j = 0; j < 2; j++) {
+                  var dx1 = ball.x[k] - i*width;
+                  var dy1 = ball.y[k] - j*height;
+                  var distance1 = Math.sqrt(dx1 * dx1 + dy1 * dy1);
+
+                  if (distance1 < radius2 + ball.radius) {
+                  // Reflect the ball's velocity
+                    var angle1 = Math.atan2(dy1, dx1);
+                    var vx1 = -Math.cos(2*angle1)*ball.vx[k] - Math.sin(2*angle1)*ball.vy[k];
+                    var vy1 = - Math.sin(2*angle1)*ball.vx[k] + Math.cos(2*angle1)*ball.vy[k];
+                    var speed1 = Math.sqrt(vx1 * vx1 + vy1 * vy1);
+                    ball.vx[k] = vx1/speed1 * speed;
+                    ball.vy[k] = vy1/speed1 * speed;
+                  }
+                }
+              }
+          
+          }
+        }
+
+        function loop() {
+            update();
+            draw();
+            requestAnimationFrame(loop);
+        }
+
+        loop();
+    </script>
+</canvas>
+
 
 <h4>Propriétés ergodiques des flots en basses dimensions incluant les billards dispersifs</h4>
 <h4>Résumé :</h4>
