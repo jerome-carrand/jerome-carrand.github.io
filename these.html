@@ -71,8 +71,8 @@ Here is an example of such billiard table, with 5000 trajectories starting from 
             x: Array.apply(null, Array(numPart)).map(function (x, i) { return 150; }),
             y: Array.apply(null, Array(numPart)).map(function (x, i) { return 110; }),
             radius: 3,
-            vx: Array.apply(null, Array(numPart)).map(function (x, i) { return speed*Math.cos(3/10 + i*Math.pow(10, -7)); }),
-            vy: Array.apply(null, Array(numPart)).map(function (x, i) { return speed*Math.sin(3/10 + i*Math.pow(10, -7)); })            
+            vx: Array.apply(null, Array(numPart)).map(function (x, i) { return speed*Math.cos(7/10 + i*Math.pow(10, -5)/numPart); }),
+            vy: Array.apply(null, Array(numPart)).map(function (x, i) { return speed*Math.sin(7/10 + i*Math.pow(10, -5)/numPart); })            
         };
         
         
